@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import io from 'socket.io-client';
 
-const SOCKET_SERVER_URL = 'http://localhost:3002';
+const SOCKET_SERVER_URL = 'https://ogl.tcdev.site';
 
 export default function useSocket() {
   const [socket, setSocket] = useState(null);
