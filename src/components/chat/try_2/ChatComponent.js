@@ -114,12 +114,13 @@ export default function ChatComponent() {
             isWaiting={isWaiting}
             partnerName={partnerName}
             onSkip={handleSkip}
+
+            
+            socket={socket}
+            username={username}
+
           />
-            <VideoCallButton
-                    socket={socket}
-                    username={username}
-                    partnerName={partnerName}
-                />
+            
         </div>
         <MessageList 
           messages={messages}
