@@ -16,16 +16,13 @@ export default function ChatHeader({ isWaiting, partnerName, onSkip,socket,usern
       <div className="font-medium text-gray-600">
         Chatting with: {partnerName}
       </div>
-      <div className=" flex" >
-
+      <div className="flex" >
           <VideoCallButton
               socket={socket}
               username={username}
               partnerName={partnerName}
-          />
-&nbsp;
-
-<button
+          /> &nbsp;
+      <button
         onClick={onSkip}
         className="flex items-center gap-2 px-3 py-1 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-colors"
       >
